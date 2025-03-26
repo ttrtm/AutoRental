@@ -1,0 +1,493 @@
+/* Загальні стилі для body */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+    color: #333;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Основні стилі для заголовків та тексту */
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* Стилі для першого розділу */
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.intro-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-left {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.intro-left h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro-left p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+
+.intro-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.intro-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Стилі для плитки з послугами */
+#services {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background: #f5f5f5; /* Кремовий */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+    #intro {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .intro-content {
+        flex-direction: column;
+    }
+
+    .intro-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .intro-right {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Загальний відступ для секцій */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    scroll-margin-top: 80px; /* Висота навбару */
+}
+
+/* Стилі для кнопок */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333; /* Темно-сірий */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555; /* Світліший сірий */
+}
+
+/* Стилі для контейнера із контактною інформацією */
+.contact-info p {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+/* Мобільна адаптивність для body */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+/* Стилі для header */
+header {
+    background: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Стилі для навігації */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Темно-сірий */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Ховер-ефект для посилань */
+nav ul li a:hover {
+    color: #555; /* Світліший сірий */
+}
+
+/* Кнопки */
+button {
+    background: linear-gradient(135deg, #000000, #454545);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about h2 {
+    color: #333; /* Темно-сірий */
+}
+
+/* Сітка автомобілів */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 150px;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Оформлення плитки */
+.car {
+    display: flex;
+    flex-direction: column; /* Розташування елементів вертикально */
+    justify-content: space-between; /* Розподіл простору між елементами */
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden; /* Запобігає виходу елементів за межі плитки */
+}
+
+.car:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Контейнер для фото */
+.car-image-container {
+    position: relative;
+    width: 100%;
+    height: 67%; /* Фіксована висота для фото */
+    overflow: hidden; /* Обрізає зайве зображення */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Відступ між фото та текстом */
+}
+
+/* Фото */
+.car-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заповнює контейнер, обрізаючи зайве */
+    border-radius: 10px;
+}
+
+/* Текст і кнопка */
+.car h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.car p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.car button {
+    width: auto; /* Кнопка займає лише необхідну ширину */
+    padding: 10px 20px; /* Зменшено внутрішні відступи */
+    margin: 10px auto 0; /* Центрування кнопки */
+    display: block; /* Забезпечує центрування через margin */
+}
+
+.car button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.car button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Передня та задня сторона фото */
+.car-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Задня сторона картки (опис авто) */
+.car-image-back {
+    background: #f8f9fa; /* Світлий фон */
+    color: #333; /* Темний текст */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Гарний сучасний шрифт */
+    font-size: 16px; /* Збільшуємо розмір */
+    font-weight: 500; /* Робимо жирнішим */
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transform: rotateY(180deg);
+    overflow-y: auto;
+}
+
+/* Стилі для списку характеристик */
+.car-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Відстань між рядками */
+}
+
+.car-specs div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Іконки */
+.car-specs i {
+    font-size: 18px;
+    color: #414141; /* Синій колір іконок */
+}
+
+
+
+/* Ефект перевертання */
+.car-image-container.flip .car-image-front {
+    transform: rotateY(180deg);
+}
+
+.car-image-container.flip .car-image-back {
+    transform: rotateY(0deg);
+}
+/* Стилі для відгуків */
+#reviews {
+    background-color: #f9f9f9;
+}
+
+.review {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    font-style: italic;
+    color: #333;
+}
+
+.review span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333; /* Темно-сірий */
+}
+/* Стилі для контактної форми */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    max-width: 500px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #222; /* Темний */
+    color: #ccc; /* Світло-сірий текст */
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media only screen and (max-width: 768px) {
+    #contact form input,
+    #contact form textarea {
+        max-width: 100%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+/* Стилі для карток автомобілів на мобільних пристроях */
+@media only screen and (max-width: 768px) {
+    .car-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .car {
+        width: 100%;
+    }
+
+    .car img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+/* Загальні стилі для іконок FontAwesome */
+.fas {
+    font-size: 20px;
+    color: #999; /* Світло-сірий */
+    margin-right: 10px;
+}
